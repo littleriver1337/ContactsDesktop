@@ -41,6 +41,10 @@ public class Controller implements Initializable {
         name.setText("");
         phone.setText("");
         email.setText("");
+        if (name.getText().equals("") & (phone.getText().equals("") & (email.getText().equals("")))){
+        } else {
+            contacts.add(item);
+        }
     }
     public void removeContact(){
         Contact item = (Contact) listView.getSelectionModel().getSelectedItem();
