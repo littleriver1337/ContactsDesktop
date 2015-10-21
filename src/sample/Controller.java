@@ -37,10 +37,10 @@ public class Controller implements Initializable {
 
     public void addContact(){
         Contact item = new Contact(name.getText(), phone.getText(), email.getText());
-        contacts.add(item);
         name.setText("");
         phone.setText("");
         email.setText("");
+        contacts.add(item);
     }
     public void removeContact(){
         Contact item = (Contact) listView.getSelectionModel().getSelectedItem();
